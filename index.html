@@ -1,25 +1,43 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" ng-app="app">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <title> One FrameWork</title>
+    <!--External Styles.-->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Reset.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
-
+    <!--App Conf. | Custom-->
+    <link href="app/app.css" rel="stylesheet" />
+    <link href="ext-modules/oneFramework/oneFramework.css" rel="stylesheet" />
+    <!--External Library | Angular / jQuery.-->
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/angular.js"></script>
-
+    <!--App -->
+    
+    <!--One Menu Module-->
     <script src="ext-modules/oneMenu/oneMenuModule.js"></script>
+
+    <!--Dashboard Module-->
     <script src="ext-modules/oneDashboard/oneDashboardModule.js"></script>
+
+    <!--Framework Module-->
     <script src="ext-modules/oneFramework/oneFrameworkModule.js"></script>
+    <script src="ext-modules/oneFramework/oneFrameworkDirective.js"></script>
     <script src="ext-modules/oneFramework/oneFrameworkController.js"></script>
+
+    <!--Main Module-->
     <script src="app/appModule.js"></script>
+
+
 </head>
 <body>
     <div class="container">
-        <one-framework></one-framework>
+        <one-framework title="One Angular Framework"
+                       subtitle="For the love of Web"
+                       icon-image="images/dp.jpg"></one-framework>
     </div>
 </body>
 </html>

@@ -1,4 +1,3 @@
-﻿/// <reference path="../../Scripts/angular.js" />
-"use strict";
+﻿"use strict";
 
 angular.module("oneMenu", []);

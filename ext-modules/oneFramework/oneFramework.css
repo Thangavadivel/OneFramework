@@ -1,0 +1,45 @@
+﻿.oneMenu-bar {
+    height: auto;
+    width: 100%;
+    background-color: #e4d0d0;
+    border-bottom: 1px solid #efdbdb;
+    padding : 10px;
+}
+/*Going for the Mobile First Approach*/
+.oneLogo-area {
+        display: block;
+        text-align: center;
+    }
+
+        .oneLogo-area img {
+            width: 75px;
+            height: 75px;
+            border: 1px solid #c7b0b0;
+        }
+
+    .oneTitle-bar {
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .oneRight-control {
+        margin: 5px 0px;
+        text-align: center;
+    }
+
+@media (min-width : 768px){
+    .oneRight-control {
+        display : inline-block;
+        float : right;
+        margin : 30px 0px;
+    }
+    .oneTitle-bar {
+        display : inline-block;
+        vertical-align : top;
+        margin-top : 15px;
+        text-align : left;
+    }
+    .oneLogo-area {
+        display : inline-block
+    }
+}
