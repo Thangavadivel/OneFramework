@@ -16,10 +16,10 @@
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/angular.js"></script>
     <!--App -->
-    
     <!--One Menu Module-->
     <script src="ext-modules/oneMenu/oneMenuModule.js"></script>
-
+    <script src="ext-modules/oneMenu/oneMenuDirective.js"></script>
+    <script src="ext-modules/oneMenu/oneMenuController.js"></script>
     <!--Dashboard Module-->
     <script src="ext-modules/oneDashboard/oneDashboardModule.js"></script>
 
@@ -27,17 +27,21 @@
     <script src="ext-modules/oneFramework/oneFrameworkModule.js"></script>
     <script src="ext-modules/oneFramework/oneFrameworkDirective.js"></script>
     <script src="ext-modules/oneFramework/oneFrameworkController.js"></script>
+    <script src="ext-modules/oneMenu/oneMenuItemDirective.js"></script>
 
     <!--Main Module-->
     <script src="app/appModule.js"></script>
-
-
 </head>
 <body>
     <div class="container">
-        <one-framework title="One Angular Framework"
-                       subtitle="For the love of Web"
-                       icon-image="images/dp.jpg"></one-framework>
+        <one-framework title="One Angular Framework" subtitle="For the love of Web" icon-image="images/dp.jpg">
+            <one-menu>
+                <!--Menu Container and elements-->
+                <one-menu-item label ="Dashboard"></one-menu-item>
+                <one-menu-item label ="Locations"></one-menu-item>
+                <one-menu-item label ="Raft Guides"></one-menu-item>
+            </one-menu>
+        </one-framework>
     </div>
 </body>
 </html>
