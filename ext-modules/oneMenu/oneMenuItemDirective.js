@@ -5,9 +5,20 @@ angular.module("oneMenu").directive("oneMenuItem", function () {
     return {
         require : '^oneMenu',
         scope:  {
-            label : '@'
+            label: '@',
+            icon: '@',
+            route : '@'
         },
-        templateUrl: "ext-module/oneMenu/oneMenuItemTemplate.html",
-        controller: "oneMenuItemController"
-    };
+        templateUrl: 'ext-modules/oneMenu/oneMenuItemTemplate.html',
+        link: function (scope, el, attr, ctrl) {
+            el.on('click', function (evt) {
+                evt.stopPropagation();
+                evt.preventDefault();
+                $scope.apply(function () {
+                    ctrl.setActiveElement(el);
+                    ctrl.setRoute(scope.route);
+                });
+            });
+        }
+      };
 })

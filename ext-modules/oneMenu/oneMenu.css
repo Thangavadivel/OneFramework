@@ -1,0 +1,44 @@
+﻿.one-menu-area {
+    /*Main div*/
+    position : relative;
+    min-height : 100vh;
+    padding-left : 0;
+    max-width : 200px;
+    background : #333;
+    margin : 0px -15px;
+
+}
+
+.one-menu {
+    /*ul*/
+    color : #e6d7d7;
+    vertical-align : top;
+}
+.one-menu ul {
+    display : inline;
+}
+.one-menu li {
+    line-height : 3em;
+    
+}
+.one-menu-item {
+    /*li*/
+    padding : 0px 15px;
+    cursor : pointer;
+}
+.one-menu-item:hover {
+    background : #4e4b4b;
+}
+li.one-menu-item div i{
+    width : 20%;
+}
+li.one-menu-item div span{
+    font-size : 16px;
+}
+
+.one-no-select {
+    user-select : none;
+    -webkit-user-select : none;
+    -moz-user-select : none;
+    -webkit-touch-callout : none;
+}

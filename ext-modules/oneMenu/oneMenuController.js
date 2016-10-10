@@ -1,7 +1,12 @@
 ﻿/// <reference path="../../Scripts/angular.js" />
-"use strict";
 
-angular.module("oneMenu")
-        .controller("oneMenuController", [$scope, function ($scope) {
-            //console.log("oneMenuController");
-        }]);
+angular.module("oneMenu").controller("oneMenuController", ['$scope',
+    function ($scope) {
+        this.setActiveElement = function (el) {
+            $scope.activeElement = el;
+        };
+        this.setRoute = function (route) {
+            $rootScope.$broadcast('one-menu-selected-event', { route: route });
+        };
+    }
+]);
